@@ -38,31 +38,13 @@ body {
 
 .block {
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(229, 229, 229);
-  padding: 10px;
-}
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 
-.text-block,
-.image-block {
-  flex: 0 0 calc((100% - 10px) / 2);
-  background-color: rgb(215, 215, 215);
-  padding: 15px;
-}
+  /* margin: 0 auto 10px auto; */
 
-.image-block {
-  background-color: #f5f7e3;
-  display: flex;
-  flex-direction: column;
-}
-
-.image {
-  max-width: 100%;
-  object-fit: cover;
-  flex-grow: 1;
-  display: block;
+  /* margin-top: 0;
   margin-bottom: 10px;
-  border: 2px solid black;
-}
-
-*/
+  margin-left: auto;
+  margin-right: auto; */
