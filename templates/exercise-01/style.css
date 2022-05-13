@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.body {
+  background-color: black;
+}
+
 /** 
  * Card sizing and positioning.
  * Don't mess with this!
@@ -24,8 +28,32 @@
  */
 
 .card {
-  background-color: blue;
-  color: #fff;
+  background-color: rgb(107, 81, 81);
   border-radius: 5px;
   padding: 15px;
+  font-family:'favorit';
+}
+
+.main-title {
+  font-weight: normal;
+  color: blueviolet;
+}
+
+.image-item-background {
+  position: relative;
+  object-fit: cover; 
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.image-item {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 100px;
+  width: 200px;
 }
