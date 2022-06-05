@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.body {
+  background-color: black;
+}
+
 /** 
  * Card sizing and positioning.
  * Don't mess with this!
@@ -23,9 +27,104 @@
  * Feel free to change this!
  */
 
-.card {
-  background-color: blue;
-  color: #fff;
-  border-radius: 5px;
-  padding: 15px;
+ @font-face {
+  font-family: "Favorit";
+  src: url("font/Favorit/favorit-regular.otf");
 }
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-family: "Favorit";
+}
+
+.card-image {
+  width: auto;
+  height: 55%;
+/*  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;*/
+  padding-bottom: 20px;
+}
+
+.title-text {
+  font-weight: bold;
+  color: rgb(0, 0, 200);
+  text-align: center;
+  /*animation-name: title-text;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;*/
+}
+
+/*@keyframes title-text {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}*/
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+p.line {
+  padding-right: 24px;
+  border-right: 2px black solid;
+}
+
+.image-item-background {
+  background-color: black;
+  object-fit: cover; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.image-item {
+  position: absolute; 
+  left: 0; 
+  right: 0;
+  top: 10%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 200px;
+  animation-name:image-item;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes image-item {
+  from {top: 5%; opacity: 0%;}
+  to {top: 10%; opacity: 100%;}
+}
+
+  .icon {
+    font-family: "Anicons Regular", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 200);
+    font-variation-settings: "TIME" 1;
+    transition: font-variation-settings 0.4s ease;
+    cursor: pointer;
+ }
+ .icon:hover {
+    font-variation-settings: "TIME" 100;
+ }
+
+ .button1 {
+  position: absolute;
+  background-color: #ffffff;
+  border: 2px black solid;
+  border-radius: 30px;
+  left: 0; 
+  right: 0;
+  top: 500px; 
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  padding-top: 12px;
+ }
