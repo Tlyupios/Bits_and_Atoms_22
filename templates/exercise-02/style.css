@@ -43,7 +43,7 @@
 }
 
 .title-text {
-  padding-top: 16px;
+  padding-top: 32px;
   font-weight: normal;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -70,31 +70,38 @@
   margin: auto;
 }
 
-.position1 {
-  left: 7px; 
-  right: 0;
-  top: 110px; 
+.circle.over {
+  background-color: rgb(255, 225, 0);
 }
 
-.position2 {
+
+.circle.position1 {
+  left: 7px; 
+  right: 0;
+  top: 120px; 
+  width: 40px;
+  height: 40px;
+}
+
+.circle.position2 {
   left: 0; 
   right: 158px;
   top: 190px; 
 }
 
-.position3 {
+.circle.position3 {
   left: 158px; 
   right: 0;
   top: 200px; 
 }
 
-.position4 {
+.circle.position4 {
   left: 0; 
   right: 158px;
   top: 275px; 
 }
 
-.position5 {
+.circle.position5 {
   left: 158px; 
   right: 0;
   top: 345px; 
