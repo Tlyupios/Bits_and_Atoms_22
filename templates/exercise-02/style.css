@@ -70,18 +70,16 @@
   margin: auto;
 }
 
-.circle.over {
-  background-color: rgb(255, 225, 0);
+.over {
+  border: dotted blue;
 }
 
 
 .circle.position1 {
   left: 7px; 
   right: 0;
-  top: 120px; 
-  width: 40px;
-  height: 40px;
-}
+  top: 120px;
+ }
 
 .circle.position2 {
   left: 0; 
@@ -107,7 +105,30 @@
   top: 345px; 
 }
 
- .journeyimage {
+.active{  
+  width: 40px;
+  height: 40px;
+  background-color: rgb(222, 203, 0);
+}
+
+ .journeyimage1 {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 20px;
+  left: 0; 
+  right: 0;
+  top: 400px; 
+  margin: auto;
+  width: 230px;
+  height: 150px;
+
+  background: url(img/Journey_1.JPG); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ /*.journeyimage2 {
   position: absolute;
   background-color: #ffffff;
   border-radius: 20px;
@@ -119,8 +140,9 @@
   height: 150px;
   cursor: pointer; 
 
-  background: url(img/Journey_1.JPG); 
+  background: url(img/Journey_2.JPG); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
  }
+*/
