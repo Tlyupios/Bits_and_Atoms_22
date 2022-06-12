@@ -43,11 +43,32 @@
 }
 
 .title-text {
-  padding-top: 32px;
   font-weight: normal;
+  font-size: x-large;
   color: rgb(255, 255, 255);
   text-align: center;
   letter-spacing: 0.04em;
+}
+
+.normal-text {
+  padding-top: 10px;
+  font-weight: normal;
+  font-size: small;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.positiontitle {
+  padding-top: 20px;
+}
+
+.positionlocarno {
+  padding-top: 400px;
+}
+
+.positionkilometer {
+  padding-top: 5px;
 }
 
 .line {
@@ -63,8 +84,8 @@
   text-align: center;
   position: absolute;
   background-color: #ffffff;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: grab;
   margin: auto;
@@ -74,75 +95,95 @@
   border: dotted blue;
 }
 
-
-.circle.position1 {
-  left: 7px; 
+.circle.position0 {
+  left: 9px; 
   right: 0;
   top: 120px;
+  background-color: rgb(40, 40, 255);
+ }
+
+.circle.position1 {
+  left: 9px; 
+  right: 0;
+  top: 160px;
  }
 
 .circle.position2 {
-  left: 0; 
+  left: 10px; 
   right: 158px;
-  top: 190px; 
+  top: 230px; 
 }
 
 .circle.position3 {
   left: 158px; 
-  right: 0;
-  top: 200px; 
+  right: 10px;
+  top: 290px; 
 }
 
 .circle.position4 {
-  left: 0; 
+  left: 10px; 
   right: 158px;
-  top: 275px; 
+  top: 375px; 
 }
 
 .circle.position5 {
-  left: 158px; 
-  right: 0;
-  top: 345px; 
+  left: 10px; 
+  right: 0px;
+  top: 450px; 
 }
 
 .active{  
-  width: 40px;
-  height: 40px;
-  background-color: rgb(222, 203, 0);
+  width: 30px;
+  height: 30px;
+  background-color: rgb(40, 40, 255);
 }
 
  .journeyimage1 {
-  position: absolute;
-  background-color: #ffffff;
   border-radius: 20px;
-  left: 0; 
-  right: 0;
-  top: 400px; 
-  margin: auto;
-  width: 230px;
-  height: 150px;
-
+  width: 180px;
+  height: 120px;
   background: url(img/Journey_1.JPG); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
  }
 
- /*.journeyimage2 {
-  position: absolute;
-  background-color: #ffffff;
+ .journeyimage2 {
   border-radius: 20px;
-  left: 0; 
-  right: 0;
-  top: 400px; 
-  margin: auto;
-  width: 230px;
-  height: 150px;
-  cursor: pointer; 
-
+  width: 180px;
+  height: 120px;
   background: url(img/Journey_2.JPG); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
  }
-*/
+
+ .journeyimage3 {
+  border-radius: 20px;
+  width: 180px;
+  height: 120px;
+  background: url(img/Journey_3.JPG); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .journeyimage4 {
+  border-radius: 20px;
+  width: 180px;
+  height: 120px;
+  background: url(img/Journey_4.JPG); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .journeyimage5 {
+  border-radius: 20px;
+  width: 180px;
+  height: 120px;
+  background: url(img/Journey_5.JPG); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }

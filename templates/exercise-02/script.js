@@ -14,6 +14,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
       e.dataTransfer.effectAllowed = 'move';
       e.dataTransfer.setData('text/html', this.innerHTML);
+      this.classList.remove('journeyimage1');
+      this.classList.remove('journeyimage2');
+      this.classList.remove('journeyimage3');
+      this.classList.remove('journeyimage4');
+      this.classList.remove('journeyimage5');
+
+
+
+
 
     }
   
@@ -48,7 +57,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function handleDrop(e) {
       if (e.stopPropagation) {
-        e.stopPropagation(); // stops the browser from redirecting.
+        e.stopPropagation();
       }
 
       if (dragSrcEl != this) {
@@ -57,19 +66,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
         this.classList.add('active');
 
       }
-      console.log(this.getAttribute('data-position'));
+      if (this.getAttribute('data-position') === '1'){
+      this.classList.add('journeyimage1');
+      }
+
       if (this.getAttribute('data-position') === '2'){
+        this.classList.add('journeyimage2');
+        }
+
+      if (this.getAttribute('data-position') === '3'){
+        this.classList.add('journeyimage3');
+        }
+      
+      if (this.getAttribute('data-position') === '4'){
+        this.classList.add('journeyimage4');
+        }
+
+      if (this.getAttribute('data-position') === '5'){
+        this.classList.add('journeyimage5');
+        }
+       
+      // I tried everything we discussed, but didn't managed to find a solution...
       //this.style.background="url(img/Journey_2.JPG)";
       //document.getElementsByClassName('journeyimage1').style.background='url(img/Journey_2.JPG)';
 
-      }
+      
       return false;
     }
 
 
 
     
-    let items = document.querySelectorAll('.position5, .position4, .position3, .position2, .position1');
+    let items = document.querySelectorAll('.position5, .position4, .position3, .position2, .position1, .position0');
     items.forEach(function(item) {
       item.addEventListener('dragstart', handleDragStart, false);
       item.addEventListener('dragenter', handleDragEnter, false);
